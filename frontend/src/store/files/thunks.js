@@ -2,7 +2,7 @@ import { loadFileList, loadAllFiles, setActiveFile, setError } from "./";
 import axios from "axios";
 
 
-const axiosAPIInstance = axios.create({
+export const axiosAPIInstance = axios.create({
     baseURL: "http://localhost:5000/files",
 })
 
