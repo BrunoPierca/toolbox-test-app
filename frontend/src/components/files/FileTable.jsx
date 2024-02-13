@@ -14,7 +14,7 @@ export const FileTable = ({ data }) => {
       </thead>
       <tbody>
         {data.map(({ file, lines }) => {
-          if (!lines.length) return <tr className='emptyFileTr'><td colSpan={4} className='text-center'>Empty file</td></tr>
+          if (!lines.length) return <tr key={`${file}-empty`} className='emptyFileTr'><td colSpan={4} className='text-center'>Empty file</td></tr>
 
           return lines.map((lineData) => {
             return <TableRow key={`${file}-${lineData.hex}-${lineData.number}`} file={file} {...lineData} />
