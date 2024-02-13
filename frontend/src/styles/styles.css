@@ -1,0 +1,41 @@
+.navbar{
+    background-color: #FF6666;
+    color: white;
+}
+
+.navDropdown > a{
+    color: white !important;
+}
+
+.nav-pills .show>.nav-link{
+    background-color: rgba(167, 49, 49, 0.5);
+}
+
+.dropdown-item.active{
+    background-color: #FF6666!important;
+    color: white;
+    font-weight: bold;
+}
+.disabledBtn {
+    background-color: rgba(175, 165, 165, 0.5) !important;
+}
+
+main{
+    height: calc(100dvh - 55.97px); /* Replace with navbar height */
+}
+
+.tableHead{
+    border-bottom: 3px solid black !important;
+}
+
+.emptyFileTr{
+    height: 50dvh;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.toast{
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
